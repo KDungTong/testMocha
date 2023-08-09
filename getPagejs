@@ -1,0 +1,7 @@
+describe("test title and url", () => {
+  it("Get title and url", async () => {
+    await browser.url("https://the-internet.herokuapp.com/dropdown");
+    console.log(await browser.getTitle());
+    console.log(await browser.getUrl());
+  });
+});
